@@ -1,0 +1,22 @@
+Two angles are supplementary. One angle measures 47 degrees. What is the measure of the other angle?
+A rectangle has a length of 12 cm and a width of 5 cm. What is its perimeter and area?
+A right triangle has legs of length 3 cm and 4 cm. What is the length of the hypotenuse?
+A straight line is intersected by another line, forming two adjacent angles. One angle is 3 times the size of the other. Find both angles.
+A circle has a radius of 7 cm. What is its circumference?
+
+An isosceles triangle has two equal sides of 10 cm each and a base of 12 cm. What is the height of the triangle drawn from the apex to the base, and what is its area?
+Triangle ABC is right-angled at C with AC = 5 cm and BC = 12 cm. The altitude from C meets AB at H. Find the lengths AH, HB, and CH.
+In triangle ABC, angle A = 55 degrees and angle B = 70 degrees. A line from vertex C meets side AB at right angles at point D. What is the size of angle ACD?
+In triangle ABC, the angle bisector from A meets BC at D. Given AB = 6 cm, AC = 9 cm, and BC = 10 cm, find the lengths BD and DC.
+A tangent and a secant are drawn from an external point P to a circle. The tangent touches the circle at T, and the secant passes through the circle meeting it at points A and B (with A between P and B). Given PT = 8 cm and PA = 4 cm, find the length PB.
+In parallelogram ABCD, the diagonal AC is drawn. A point E lies on diagonal AC such that AE = 1/3 AC. A line through E parallel to AB meets AD at F. Find the ratio AF : FD.
+
+From an external point P, two secants are drawn to a circle. The first secant meets the circle at A and B (A closer to P), and the second meets it at C and D (C closer to P). Given PA = 4 cm, AB = 11 cm, and PC = 3 cm, find CD. Then find the length of the tangent from P to the circle.
+Two circles intersect at points A and B. A common external tangent touches the first circle at P and the second circle at Q. The line AB extended meets PQ at R. Prove or find: given that RP = 12 cm and RQ = 20 cm, find the length RB, and hence RA.
+A circle with centre O has radius 13 cm. A chord AB of length 24 cm is drawn. A smaller circle with centre O' is drawn internally tangent to the large circle and also tangent to chord AB at its midpoint M. Find the radius of the smaller circle.
+Points D, E, F are the feet of the altitudes from A, B, C respectively in acute triangle ABC. The orthocenter is H. Prove by angle-chasing that angle BHC = 180° − angle A, and use this to find angle BHC when angle A = 68°.
+Triangle ABC has AB = 7 cm, BC = 8 cm, CA = 9 cm. A circle is drawn with BC as diameter. This circle intersects AB at point D and AC at point E. Find DE.
+Let ABC be a triangle with angle BAC = 60 degrees. Let AP bisect angle BAC and let BQ bisect angle ABC, with P on BC and Q on AC. If AB + BP = AQ + QB, what are the angles of the triangle? (2001 IMO Shortlist Problems/G8)
+In a triangle ABC satisfying AB + BC = 3AC, the incircle has centre I and touches the sides AB and BC at D and E, respectively. Let K and L be the symmetric points of D and E with respect to I. Prove that the quadrilateral ACKL is cyclic. (2005 IMO Shortlist Problems/G1)
+Consider an acute-angled triangle ABC. Let P be the foot of the altitude of triangle ABC issuing from the vertex A, and let O be the circumcenter of triangle ABC. Assume that angle C = angle B + 30 degrees. Prove that angle A + angle COP < 90 degrees. (2001 IMO Shortlist Problems/G2)
+Let A, B, C, D be fore distinct points on a line, in that order. The circles with diameter AC and BD intersect at X and Y. The line XY meets BC at Z. Let P be a point on the line XY other than Z. The line CP intersects the circle with diameter AC at C and M, and the line BP intersects the circle with diameter BD at B and N. Prove that the lines AM, DN, XY are concurrent. (1995 IMO Problems/Problem 1)
