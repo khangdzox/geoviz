@@ -1,0 +1,64 @@
+You are given a textual geometry problem. Your objective is to create an animation of the geometric diagram to accompany the problem description. The animation need to fulfill the following requirements:
+
+- The animation only shows the description and the question. It must not contain unmentioned information, calculation, or answers.
+- The animation needs to draw the diagram step-by-step. Each step should only introduce one new geometry object. Exceptions include many simple objects (points or lines) with only one relationship, or steps that cannot be separated without producing incomprehensible texts. In case of introducing many new objects, draw objects in the order of mentioning, with brief pauses between them.
+- The animation must display a part of the description that narrate the current drawing step above the diagram.
+- The animation should briefly pause between steps, and longer pauses after each questions.
+- The animation must display the name of every mentioned point, line (if have special name other than two-points), and angle (if have special name other than three-points).
+- The animation should use colours to differentiate between different types of geometry object. For example:
+    - Points and lines use grayscale colours.
+    - Polygons use different vibrant colours for different objects.
+- The animation must briefly highlight newly-added or mentioned objects during each step. For questions, the animation must highlight the targeted objects for longer period. The highlights can be:
+    - Lines changing colours.
+    - Points/Dots being circled or increasing radius.
+    - Polygons changing stroke or fill colours.
+- The animation should provide supporting objects and/or annotations when drawing objects with not obvious coordinates. For example:
+    - For the centre of the circumcircle of a triangle, temporarily draw any two perpendicular bisectors of that triangle.
+    - For a new parallel line, highlight the existing line that the new line is parallel to.
+    - For the middle point of a line segment, draw equality annotation for both sides of the segment.
+
+You should follow this instruction to create a Python script to use the Manim library to create the animation:
+
+1.  Divide problem description into smaller chunks, with each chunk consisting of one drawing step.
+2.  For each step, identify the following:
+
+### Step <i>:
+Text: <chunk of text from description>
+Is question: <true/false>
+New object(s): *(<object type> <object name>,)
+Involved existing object(s): *(<object type> <object name>,)
+(if there are new object(s) and involved object(s))
+Relationship: <relationship between new and existing object, or None if not related>
+Required helper function:
+<Python function definition to calculate required coordinates for new objects based on existing objects, or None if not needed>
+(end if)
+(if there are new object(s))
+(repeat for each object)
+<object type> <object name>:
+    Obvious coordinates: <true/false>
+    Supporting object(s): (if obvious coordinates is true) None (else) *(<object type> <object name>,) (end if)
+(end repeat)
+(end if)
+(repeat whole step for new supporting object(s) if exists)
+
+3. Implement the Python script
+    - Move all helper functions to top of the file, below imports
+    - Define all objects and calculate their coordinates
+    - Play the animation step-by-step, pause and refit camera so that all objects are inside frame.
+
+Common errors that you should avoid and what to do:
+
+- Wrong coordinates: You should not assume and hard-code coordinates. Instead, use or define helper function to calculate exact coordinates.
+- Objects' name are not showing: Make sure labels are added to each new object.
+- Lines are truncated to segments: When the intersection point lies outside the segment, extend the segment to both sides to meet at the intersection point.
+- Diagram is cropped: Make sure to refit the camera when adding new object.
+- Common runtime error: Manim's Intersection does not return multiple discrete points. Manim's Scene's Camera does not have Frame, MovingCameraScene's Camera does. Manim's Write accepts only one object.
+
+###
+
+Problem: Given an acute triangle ABC (AB<AC) inscribed in the circumcircle (O). The altitude AD of triangle ABC intersects the circumcircle (O) again at point E (E/=A). Let K be the foot of the perpendicular from point E to line AB.
+a) Prove that the four points E,D,B,K are concyclic.
+b) The line AO intersects line BC at point S. Prove that EA is the angle bisector of ∠CEK and that AB⋅AC=AE⋅AS.
+c) Let H be the orthocenter of triangle ABC and I be the midpoint of segment AB. Prove that line SI is perpendicular to line HK.
+
+The generated animation has the following problems:
